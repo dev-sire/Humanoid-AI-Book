@@ -1,0 +1,28 @@
+{
+  "id": "chapter-3",
+  "title": "Chapter 3: Digital Twin & Simulation",
+  "description": "Overview",
+  "source": "@site/docs/chapter-3.md",
+  "sourceDirName": ".",
+  "slug": "/chapter-3",
+  "permalink": "/docs/chapter-3",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/physical-ai-book/tree/main/docs/chapter-3.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Chapter 3: Digital Twin & Simulation",
+    "sidebar_label": "Chapter 3: Digital Twin & Simulation",
+    "week": "4-5"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 2: ROS 2 Fundamentals",
+    "permalink": "/docs/chapter-2"
+  },
+  "next": {
+    "title": "Chapter 4: NVIDIA Isaac Integration",
+    "permalink": "/docs/chapter-4"
+  }
+}

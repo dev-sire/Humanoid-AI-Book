@@ -4,7 +4,9 @@
       "Bash(.specify/scripts/bash/create-phr.sh:*)",
       "Bash(git fetch:*)",
       "Bash(powershell -Command:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash($env:SPECIFY_FEATURE=\"001-physical-ai-book\")",
+      "Bash(npm install)"
     ],
     "deny": [],
     "ask": []

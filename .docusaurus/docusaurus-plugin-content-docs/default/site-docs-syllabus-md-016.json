@@ -1,0 +1,23 @@
+{
+  "id": "syllabus",
+  "title": "Example 13-Week Syllabus",
+  "description": "This syllabus provides an example of how the content of this book can be structured into a 13-week university course.",
+  "source": "@site/docs/syllabus.md",
+  "sourceDirName": ".",
+  "slug": "/syllabus",
+  "permalink": "/docs/syllabus",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/physical-ai-book/tree/main/docs/syllabus.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Example 13-Week Syllabus",
+    "sidebar_label": "Example Syllabus"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module Summaries",
+    "permalink": "/docs/module-summaries"
+  }
+}

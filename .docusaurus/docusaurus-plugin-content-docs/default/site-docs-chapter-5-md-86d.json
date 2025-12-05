@@ -1,0 +1,28 @@
+{
+  "id": "chapter-5",
+  "title": "Chapter 5: Vision-Language-Action (VLA) Models",
+  "description": "Overview",
+  "source": "@site/docs/chapter-5.md",
+  "sourceDirName": ".",
+  "slug": "/chapter-5",
+  "permalink": "/docs/chapter-5",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/physical-ai-book/tree/main/docs/chapter-5.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Chapter 5: Vision-Language-Action (VLA) Models",
+    "sidebar_label": "Chapter 5: VLA Models",
+    "week": "8-9"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 4: NVIDIA Isaac Integration",
+    "permalink": "/docs/chapter-4"
+  },
+  "next": {
+    "title": "Chapter 6: Humanoid Control & Deployment",
+    "permalink": "/docs/chapter-6"
+  }
+}
