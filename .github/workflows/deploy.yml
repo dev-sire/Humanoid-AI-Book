@@ -11,26 +11,38 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    # Recommended permissions block for GitHub Pages deployment
     permissions:
       pages: write
       id-token: write
+    
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      # UPGRADE 1: Use v4 for better compatibility and security
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        
+      # UPGRADE 2: Use v4 for better cache logic and compatibility
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          # FIX: Ensure version 20 or later is used, as required by your build
+          node-version: 20
           cache: npm
 
       - name: Install dependencies
         run: npm install
+        
       - name: Build website
         run: npm run build
 
-      - name: Upload Artifact
+      # UPGRADE 3: Use v4 for upload-artifact
+      - name: Upload Artifact (Docusaurus build output)
         uses: actions/upload-artifact@v4
         with:
+          # The Docusaurus build output directory
+          name: github-pages
           path: ./build
-
+          
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4 # UPGRADE 4: Use v4 for deployment
