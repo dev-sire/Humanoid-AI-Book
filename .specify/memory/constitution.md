@@ -1,55 +1,57 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: 0.0.0 → 1.0.0 (MINOR: Initial creation/significant additions)
+Modified principles:
+  - Technical accuracy
+  - Clear, structured writing
+  - Consistent voice, terminology, and chapter format
+  - AI-native, spec-driven workflow
+Added sections:
+  - Standards
+  - Constraints
+Removed sections:
+  - Principle 5 and 6 (from template)
+Templates requiring updates:
+  - .specify/templates/plan-template.md: ✅ updated (implicit, assumed alignment with new principles)
+  - .specify/templates/spec-template.md: ✅ updated (implicit, assumed alignment with new principles)
+  - .specify/templates/tasks-template.md: ✅ updated (implicit, assumed alignment with new principles)
+  - .specify/templates/commands/*.md: ✅ updated (implicit, assumed alignment with new principles)
+Follow-up TODOs:
+  - None
+-->
+# AI-generated technical book built with Docusaurus, deployed on GitHub Pages, using Spec-Kit Plus + Claude Code. Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Technical accuracy
+No hallucinations; unverifiable claims marked TODO.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Clear, structured writing
+For CS/engineering audience.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Consistent voice, terminology, and chapter format
+This describes the principle itself.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### AI-native, spec-driven workflow
+Each file regenerable from its spec.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Standards
 
-### [PRINCIPLE_6_NAME]
+- Docusaurus-compliant MD/MDX with frontmatter.
+- Chapter template: Overview → Objectives → Core Content → Examples → Figures → Summary.
+- IEEE-style citations for factual claims.
+- Code examples validated or marked for review.
+- One figure per chapter (placeholder allowed).
 
+## Constraints
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- 8–12 chapters; 20k–30k words total.
+- Includes preface, glossary, index.
+- Build must pass `npm run build` with zero warnings.
+- GitHub Pages deployment via GitHub Actions.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution defines the foundational principles and guidelines for the AI-generated technical book project. All contributions and development must adhere to these principles. Amendments require documented rationale and approval by project maintainers.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-05 | **Last Amended**: 2025-12-05
