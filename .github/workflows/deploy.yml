@@ -16,6 +16,9 @@ jobs:
       pages: write
       id-token: write
     
+    environment:
+      name: github-pages
+      
     steps:
       # UPGRADE 1: Use v4 for better compatibility and security
       - name: Checkout Repository
