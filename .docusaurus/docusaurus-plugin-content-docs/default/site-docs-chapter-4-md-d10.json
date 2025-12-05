@@ -1,0 +1,28 @@
+{
+  "id": "chapter-4",
+  "title": "Chapter 4: NVIDIA Isaac Integration",
+  "description": "Overview",
+  "source": "@site/docs/chapter-4.md",
+  "sourceDirName": ".",
+  "slug": "/chapter-4",
+  "permalink": "/docs/chapter-4",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/physical-ai-book/tree/main/docs/chapter-4.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Chapter 4: NVIDIA Isaac Integration",
+    "sidebar_label": "Chapter 4: NVIDIA Isaac Integration",
+    "week": "6-7"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 3: Digital Twin & Simulation",
+    "permalink": "/docs/chapter-3"
+  },
+  "next": {
+    "title": "Chapter 5: VLA Models",
+    "permalink": "/docs/chapter-5"
+  }
+}

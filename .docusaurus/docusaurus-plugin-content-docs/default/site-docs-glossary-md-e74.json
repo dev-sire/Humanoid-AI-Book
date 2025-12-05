@@ -1,0 +1,27 @@
+{
+  "id": "glossary",
+  "title": "Glossary",
+  "description": "A list of terms and definitions used throughout the book.",
+  "source": "@site/docs/glossary.md",
+  "sourceDirName": ".",
+  "slug": "/glossary",
+  "permalink": "/docs/glossary",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/physical-ai-book/tree/main/docs/glossary.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Glossary",
+    "sidebar_label": "Glossary"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 6: Humanoid Control & Deployment",
+    "permalink": "/docs/chapter-6"
+  },
+  "next": {
+    "title": "Module Summaries",
+    "permalink": "/docs/module-summaries"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "module-summaries",
+  "title": "Module Summaries",
+  "description": "Module 1: Foundations (Chapters 1-2)",
+  "source": "@site/docs/module-summaries.md",
+  "sourceDirName": ".",
+  "slug": "/module-summaries",
+  "permalink": "/docs/module-summaries",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/physical-ai-book/tree/main/docs/module-summaries.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Module Summaries",
+    "sidebar_label": "Module Summaries"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Glossary",
+    "permalink": "/docs/glossary"
+  },
+  "next": {
+    "title": "Example Syllabus",
+    "permalink": "/docs/syllabus"
+  }
+}

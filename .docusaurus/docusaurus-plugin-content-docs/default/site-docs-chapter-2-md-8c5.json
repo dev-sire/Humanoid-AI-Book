@@ -1,0 +1,28 @@
+{
+  "id": "chapter-2",
+  "title": "Chapter 2: ROS 2 Fundamentals",
+  "description": "Overview",
+  "source": "@site/docs/chapter-2.md",
+  "sourceDirName": ".",
+  "slug": "/chapter-2",
+  "permalink": "/docs/chapter-2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-org/physical-ai-book/tree/main/docs/chapter-2.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Chapter 2: ROS 2 Fundamentals",
+    "sidebar_label": "Chapter 2: ROS 2 Fundamentals",
+    "week": "2-3"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 1: Intro to Physical AI",
+    "permalink": "/docs/chapter-1"
+  },
+  "next": {
+    "title": "Chapter 3: Digital Twin & Simulation",
+    "permalink": "/docs/chapter-3"
+  }
+}
