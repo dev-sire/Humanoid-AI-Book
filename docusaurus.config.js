@@ -50,14 +50,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-org/physical-ai-book/tree/main/',
+            'https://github.com/dev-sire/Humanoid-AI-Book',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-org/physical-ai-book/tree/main/',
+            'https://github.com/dev-sire/Humanoid-AI-Book',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -75,7 +75,7 @@ const config = {
         title: 'Physical AI & Humanoid Robotics Book',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: '/img/logo.png',
         },
         items: [
           {
@@ -85,7 +85,7 @@ const config = {
             label: 'Chapters',
           },
           {
-            href: 'https://github.com/your-org/physical-ai-book',
+            href: 'https://github.com/dev-sire/Humanoid-AI-Book',
             label: 'GitHub',
             position: 'right',
           },
