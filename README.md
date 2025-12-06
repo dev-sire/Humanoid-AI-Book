@@ -1,4 +1,4 @@
-# Physical AI & Humanoid Robotics Book
+# Physical AI & Humanoid Robotics Book (Written by an LLM)
 
 Welcome to the official repository for the "Physical AI & Humanoid Robotics Book"! This project serves as a comprehensive guide for anyone interested in the exciting convergence of artificial intelligence and physical robotic systems, with a particular focus on humanoid forms.
 
