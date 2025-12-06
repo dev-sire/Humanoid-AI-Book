@@ -50,7 +50,8 @@ robot.apply_torques(joint_torques)
 
 ## Figures
 
-<!-- ![Placeholder for a diagram of a whole-body control architecture](placeholder.png) -->
+![whole-body control architecture](../static/img/chap-6.png)
+
 *Figure 1: A simplified diagram of a whole-body control architecture for a humanoid robot.*
 
 ## Summary

@@ -26,11 +26,11 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.js",
-          "editUrl": "https://github.com/your-org/physical-ai-book/tree/main/"
+          "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book"
         },
         "blog": {
           "showReadingTime": true,
-          "editUrl": "https://github.com/your-org/physical-ai-book/tree/main/"
+          "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book"
         },
         "theme": {
           "customCss": "./src/css/custom.css"
@@ -44,7 +44,7 @@ export default {
       "title": "Physical AI & Humanoid Robotics Book",
       "logo": {
         "alt": "My Site Logo",
-        "src": "img/logo.png"
+        "src": "/img/logo.png"
       },
       "items": [
         {
@@ -54,7 +54,7 @@ export default {
           "label": "Chapters"
         },
         {
-          "href": "https://github.com/your-org/physical-ai-book",
+          "href": "https://github.com/dev-sire/Humanoid-AI-Book",
           "label": "GitHub",
           "position": "right"
         }

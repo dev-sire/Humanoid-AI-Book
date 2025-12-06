@@ -69,7 +69,8 @@ ros2 topic echo /chatter
 
 ## Figures
 
-<!-- ![Placeholder for a diagram showing a simple publisher/subscriber model](placeholder.png) -->
+![simple publisher/subscriber model](../static/img/chap-2.png)
+
 *Figure 1: A simple ROS 2 system with a publisher node, a subscriber node, and a topic connecting them.*
 
 ## Summary

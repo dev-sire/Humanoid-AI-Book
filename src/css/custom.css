@@ -1,24 +1,80 @@
 /**
- * Any CSS included here will be global.
+ * Global theme customization
+ * Physical AI & Humanoid Robotics
  */
 
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+.navbar {
+  backdrop-filter: blur(12px);
+}
+[data-theme='light'] .navbar{
+  background-color: #ffffffcc;
+}
+.card {
+  background: rgba(2, 6, 23, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  box-shadow: 0 20px 40px rgba(0,0,0,.35);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+a:hover {
+  text-decoration: none;
+}
+
+:root {
+  /* Primary brand color (AI Teal) */
+  --ifm-color-primary: #06b6d4;          /* cyan-500 */
+  --ifm-color-primary-dark: #0891b2;
+  --ifm-color-primary-darker: #0e7490;
+  --ifm-color-primary-darkest: #155e75;
+
+  --ifm-color-primary-light: #22d3ee;
+  --ifm-color-primary-lighter: #67e8f9;
+  --ifm-color-primary-lightest: #a5f3fc;
+
+  /* Background & surfaces */
+  --ifm-background-color: #020617;       /* very dark blue */
+  --ifm-background-surface-color: #020617;
+
+  /* Text */
+  --ifm-font-color-base: #0f172a;
+  --ifm-heading-color: #020617;
+
+  /* Links */
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: #38bdf8;
+
+  /* Code blocks */
+  --ifm-code-background: #020617;
+  --ifm-code-font-size: 95%;
+
+  /* UI polish */
+  --ifm-global-radius: 12px;
+  --ifm-button-border-radius: 999px;
+
+  /* Navbar */
+  --ifm-navbar-background-color: #020617cc;
+  --ifm-navbar-shadow: none;
+}
+
+/* ------------------ DARK MODE ------------------ */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  /* Primary glow color */
+  --ifm-color-primary: #22d3ee;
+  --ifm-color-primary-dark: #06b6d4;
+  --ifm-color-primary-darker: #0891b2;
+  --ifm-color-primary-darkest: #0e7490;
+
+  --ifm-color-primary-light: #67e8f9;
+  --ifm-color-primary-lighter: #a5f3fc;
+  --ifm-color-primary-lightest: #cffafe;
+
+  /* Backgrounds */
+  --ifm-background-color: #020617;
+  --ifm-background-surface-color: #020617;
+
+  /* Text */
+  --ifm-font-color-base: #e5e7eb;
+  --ifm-heading-color: #f8fafc;
+
+  /* Nav */
+  --ifm-navbar-background-color: #020617cc;
 }

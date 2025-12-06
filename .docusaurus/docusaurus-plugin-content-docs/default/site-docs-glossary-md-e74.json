@@ -1,14 +1,14 @@
 {
   "id": "glossary",
   "title": "Glossary",
-  "description": "A list of terms and definitions used throughout the book.",
+  "description": "A comprehensive list of technical terms and AI-specific terminology used throughout the \"Physical AI & Humanoid Robotics\" book.",
   "source": "@site/docs/glossary.md",
   "sourceDirName": ".",
   "slug": "/glossary",
   "permalink": "/docs/glossary",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/your-org/physical-ai-book/tree/main/docs/glossary.md",
+  "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/glossary.md",
   "tags": [],
   "version": "current",
   "frontMatter": {

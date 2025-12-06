@@ -55,7 +55,8 @@ for action in actions:
 
 ## Figures
 
-<!-- ![Placeholder for a diagram of a VLA model architecture](placeholder.png) -->
+![VLA model architecture](../static/img/chap-5.png)
+
 *Figure 1: A high-level diagram of a Vision-Language-Action (VLA) model, showing the vision and language encoders and the action decoder.*
 
 ## Summary

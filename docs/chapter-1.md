@@ -33,7 +33,8 @@ Physical AI, also known as Embodied AI, is a field of artificial intelligence th
 
 ## Figures
 
-<!-- ![Placeholder for a diagram showing the perception-action loop](placeholder.png) -->
+![perception-action loop](../static/img/chap-1.png)
+
 *Figure 1: The Perception-Action Loop, illustrating how an agent perceives the state of the world, reasons about it, and takes an action, which in turn changes the state of the world.*
 
 ## Summary
