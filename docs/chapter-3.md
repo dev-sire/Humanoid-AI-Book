@@ -57,7 +57,8 @@ You can then use a ROS 2 node to control the robot in the simulation. For exampl
 
 ## Figures
 
-<!-- ![Placeholder for a screenshot of a simple robot in Gazebo](placeholder.png) -->
+![simple robot in Gazebo](../static/img/chap-3.png)
+
 *Figure 1: A simple robot model in the Gazebo simulation environment.*
 
 ## Summary

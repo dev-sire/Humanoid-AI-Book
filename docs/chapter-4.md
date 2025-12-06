@@ -67,7 +67,8 @@ simulation_app.close()
 
 ## Figures
 
-<!-- ![Placeholder for a screenshot of a robot in Isaac Sim](placeholder.png) -->
+![Robot in Isaac Sim](../static/img/chap-4.png)
+
 *Figure 1: A complex robot model in the photorealistic Isaac Sim environment.*
 
 ## Summary
