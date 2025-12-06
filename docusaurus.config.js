@@ -17,17 +17,14 @@ const config = {
   title: 'Physical AI & Humanoid Robotics Book',
   tagline: 'A guide to bridging digital AI with real-world robotic systems.',
   favicon: 'img/favicon.ico',
-  url: 'https://dev-sire.github.io',
-  baseUrl: '/Humanoid-AI-Book/',
-  organizationName: 'dev-sire',
-  projectName: 'Humanoid-AI-Book',
+  url: 'https://your-docusaurus-site.com',
+  baseUrl: '/',
+  organizationName: 'your-org',
+  projectName: 'physical-ai-book',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
