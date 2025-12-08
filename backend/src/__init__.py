@@ -1,0 +1,1 @@
+"""RAG chatbot backend application."""

@@ -1,0 +1,447 @@
+openapi: 3.0.3
+info:
+  title: RAG Chatbot API
+  description: |
+    REST API for the Physical AI & Humanoid Robotics textbook RAG chatbot.
+    Provides endpoints for health checks, chat interactions, and session history retrieval.
+  version: 1.0.0
+  contact:
+    name: API Support
+    email: support@example.com
+
+servers:
+  - url: https://api.example.com
+    description: Production server
+  - url: http://localhost:8000
+    description: Local development server
+
+tags:
+  - name: health
+    description: Service health and status endpoints
+  - name: chat
+    description: Chat interaction endpoints
+  - name: sessions
+    description: Session management endpoints
+
+paths:
+  /api/health:
+    get:
+      tags:
+        - health
+      summary: Health check
+      description: |
+        Returns the health status of all dependent services (Qdrant, Postgres, OpenAI API).
+        Used for monitoring and uptime verification.
+      operationId: getHealth
+      responses:
+        '200':
+          description: All services are healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+              examples:
+                allHealthy:
+                  summary: All services operational
+                  value:
+                    status: healthy
+                    services:
+                      qdrant: up
+                      postgres: up
+                      openai: up
+                    timestamp: '2025-12-01T12:00:00.000Z'
+        '503':
+          description: One or more services are unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+              examples:
+                partialFailure:
+                  summary: Qdrant service down
+                  value:
+                    status: unhealthy
+                    services:
+                      qdrant: down
+                      postgres: up
+                      openai: up
+                    timestamp: '2025-12-01T12:00:00.000Z'
+
+  /api/chat:
+    post:
+      tags:
+        - chat
+      summary: Send chat message
+      description: |
+        Sends a user message to the chatbot and receives an AI-generated response with source citations.
+        Optionally include a session_id to continue an existing conversation, or omit to start a new session.
+        Selected text from the documentation page can be included as additional context.
+      operationId: sendChatMessage
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChatRequest'
+            examples:
+              newSession:
+                summary: New conversation
+                value:
+                  message: What is ROS2?
+              existingSession:
+                summary: Continue conversation
+                value:
+                  message: What are its main components?
+                  session_id: 550e8400-e29b-41d4-a716-446655440000
+              withSelectedText:
+                summary: Query with selected page text
+                value:
+                  message: Explain this in simple terms
+                  selected_text: Embodied intelligence is built upon a continuous cycle of perception, reasoning, and action.
+      responses:
+        '200':
+          description: Successful response with answer and citations
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatResponse'
+              examples:
+                successfulAnswer:
+                  summary: Answer with sources
+                  value:
+                    session_id: 550e8400-e29b-41d4-a716-446655440000
+                    message: |
+                      ROS2 (Robot Operating System 2) is a flexible framework for writing robot software.
+                      It provides services like hardware abstraction, low-level device control,
+                      message-passing between processes, and package management.
+                    sources:
+                      - title: ROS2 Fundamentals
+                        file_path: docs/ros2/fundamentals.md
+                        relevance_score: 0.87
+                        excerpt: ROS2 is a flexible framework for writing robot software...
+                      - title: ROS2 Architecture
+                        file_path: docs/ros2/architecture.md
+                        relevance_score: 0.82
+                        excerpt: The architecture of ROS2 provides services like hardware abstraction...
+                    timestamp: '2025-12-01T12:00:00.000Z'
+        '400':
+          description: Invalid request (e.g., missing message, query too long, malicious patterns detected)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                queryTooLong:
+                  summary: Query exceeds 1000 characters
+                  value:
+                    error: Query exceeds 1000 character limit
+                    code: INVALID_INPUT
+                    timestamp: '2025-12-01T12:00:00.000Z'
+                maliciousPattern:
+                  summary: Prompt injection detected
+                  value:
+                    error: Query contains prohibited content
+                    code: INVALID_INPUT
+                    timestamp: '2025-12-01T12:00:00.000Z'
+        '429':
+          description: Rate limit exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                rateLimitExceeded:
+                  summary: Too many requests
+                  value:
+                    error: Rate limit exceeded. Please try again in a moment.
+                    code: RATE_LIMIT_EXCEEDED
+                    timestamp: '2025-12-01T12:00:00.000Z'
+        '500':
+          description: Internal server error (e.g., database failure, LLM API error)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                serverError:
+                  summary: Generic server error
+                  value:
+                    error: An error occurred while processing your request. Please try again.
+                    code: INTERNAL_ERROR
+                    timestamp: '2025-12-01T12:00:00.000Z'
+
+  /api/sessions/{session_id}/history:
+    get:
+      tags:
+        - sessions
+      summary: Get session history
+      description: |
+        Retrieves the full conversation history for a given session ID.
+        Returns all messages in chronological order (oldest first).
+      operationId: getSessionHistory
+      parameters:
+        - name: session_id
+          in: path
+          required: true
+          description: UUID of the session to retrieve
+          schema:
+            type: string
+            format: uuid
+          example: 550e8400-e29b-41d4-a716-446655440000
+      responses:
+        '200':
+          description: Successful history retrieval
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SessionHistoryResponse'
+              examples:
+                conversationHistory:
+                  summary: Multi-message conversation
+                  value:
+                    session_id: 550e8400-e29b-41d4-a716-446655440000
+                    messages:
+                      - message_id: 123e4567-e89b-12d3-a456-426614174000
+                        role: user
+                        content: What is ROS2?
+                        created_at: '2025-12-01T12:00:00.000Z'
+                      - message_id: 223e4567-e89b-12d3-a456-426614174001
+                        role: assistant
+                        content: ROS2 is a flexible framework for writing robot software...
+                        context_used:
+                          chunks:
+                            - title: ROS2 Fundamentals
+                              file_path: docs/ros2/fundamentals.md
+                              relevance_score: 0.87
+                              excerpt: ROS2 is a flexible framework...
+                        created_at: '2025-12-01T12:00:05.000Z'
+                      - message_id: 323e4567-e89b-12d3-a456-426614174002
+                        role: user
+                        content: What are its main components?
+                        created_at: '2025-12-01T12:01:00.000Z'
+                      - message_id: 423e4567-e89b-12d3-a456-426614174003
+                        role: assistant
+                        content: The main components of ROS2 include nodes, topics, services, and actions...
+                        context_used:
+                          chunks:
+                            - title: ROS2 Architecture
+                              file_path: docs/ros2/architecture.md
+                              relevance_score: 0.89
+                              excerpt: ROS2 architecture consists of nodes...
+                        created_at: '2025-12-01T12:01:03.000Z'
+        '404':
+          description: Session not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                sessionNotFound:
+                  summary: Invalid session ID
+                  value:
+                    error: Session not found
+                    code: NOT_FOUND
+                    timestamp: '2025-12-01T12:00:00.000Z'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+components:
+  schemas:
+    HealthResponse:
+      type: object
+      required:
+        - status
+        - services
+        - timestamp
+      properties:
+        status:
+          type: string
+          enum: [healthy, unhealthy]
+          description: Overall health status
+        services:
+          type: object
+          required:
+            - qdrant
+            - postgres
+            - openai
+          properties:
+            qdrant:
+              type: string
+              enum: [up, down]
+              description: Qdrant vector database status
+            postgres:
+              type: string
+              enum: [up, down]
+              description: Postgres database status
+            openai:
+              type: string
+              enum: [up, down]
+              description: OpenAI API status
+        timestamp:
+          type: string
+          format: date-time
+          description: ISO 8601 timestamp of health check
+
+    ChatRequest:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          type: string
+          minLength: 1
+          maxLength: 1000
+          description: User's question or message
+          example: What is Physical AI?
+        session_id:
+          type: string
+          format: uuid
+          description: Optional session ID to continue existing conversation
+          example: 550e8400-e29b-41d4-a716-446655440000
+        selected_text:
+          type: string
+          minLength: 1
+          maxLength: 1000
+          description: Optional text selected from documentation page for context
+          example: Embodied intelligence is built upon a continuous cycle of perception, reasoning, and action.
+
+    ChatResponse:
+      type: object
+      required:
+        - session_id
+        - message
+        - sources
+        - timestamp
+      properties:
+        session_id:
+          type: string
+          format: uuid
+          description: Session ID (new or existing)
+        message:
+          type: string
+          description: Assistant's response message
+        sources:
+          type: array
+          description: Source citations for the response
+          items:
+            $ref: '#/components/schemas/Source'
+        timestamp:
+          type: string
+          format: date-time
+          description: ISO 8601 timestamp of response
+
+    Source:
+      type: object
+      required:
+        - title
+        - file_path
+        - relevance_score
+        - excerpt
+      properties:
+        title:
+          type: string
+          description: Document title
+          example: ROS2 Fundamentals
+        file_path:
+          type: string
+          description: Relative path to source document
+          example: docs/ros2/fundamentals.md
+        relevance_score:
+          type: number
+          format: float
+          minimum: 0.0
+          maximum: 1.0
+          description: Cosine similarity score (0-1)
+          example: 0.87
+        excerpt:
+          type: string
+          maxLength: 500
+          description: Text excerpt from source (max 500 chars)
+          example: ROS2 is a flexible framework for writing robot software...
+
+    SessionHistoryResponse:
+      type: object
+      required:
+        - session_id
+        - messages
+      properties:
+        session_id:
+          type: string
+          format: uuid
+          description: Session ID
+        messages:
+          type: array
+          description: Chronologically ordered messages (oldest first)
+          items:
+            $ref: '#/components/schemas/ChatMessage'
+
+    ChatMessage:
+      type: object
+      required:
+        - message_id
+        - role
+        - content
+        - created_at
+      properties:
+        message_id:
+          type: string
+          format: uuid
+          description: Unique message ID
+        role:
+          type: string
+          enum: [user, assistant]
+          description: Message sender role
+        content:
+          type: string
+          description: Message text content
+        selected_text:
+          type: string
+          description: User-selected page text (user messages only)
+        context_used:
+          type: object
+          description: Retrieved chunks used for answer (assistant messages only)
+          properties:
+            chunks:
+              type: array
+              items:
+                $ref: '#/components/schemas/Source'
+        created_at:
+          type: string
+          format: date-time
+          description: ISO 8601 timestamp of message creation
+
+    ErrorResponse:
+      type: object
+      required:
+        - error
+        - code
+        - timestamp
+      properties:
+        error:
+          type: string
+          description: Human-readable error message
+        code:
+          type: string
+          enum:
+            - INVALID_INPUT
+            - NOT_FOUND
+            - RATE_LIMIT_EXCEEDED
+            - INTERNAL_ERROR
+          description: Machine-readable error code
+        timestamp:
+          type: string
+          format: date-time
+          description: ISO 8601 timestamp of error
+
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API key for admin endpoints (future use)
+
+security: []
