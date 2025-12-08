@@ -3,8 +3,8 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-
 import styles from '../css/module.module.css';
+import Root from '@theme/Root';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -54,7 +54,6 @@ function HomepageHeader() {
               alt="Physical AI illustration"
             />
           </div>
-
         </div>
       </div>
     </header>
@@ -63,10 +62,12 @@ function HomepageHeader() {
 
 export default function Home() {
   return (
-    <Layout
-      title="Physical AI & Humanoid Robotics"
-      description="A practical guide to bridging AI with real-world robotic systems">
-      <HomepageHeader />
-    </Layout>
+    <Root>
+      <Layout
+        title="Physical AI & Humanoid Robotics"
+        description="A practical guide to bridging AI with real-world robotic systems">
+        <HomepageHeader />
+      </Layout>
+    </Root>
   );
 }

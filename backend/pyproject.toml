@@ -1,0 +1,58 @@
+[project]
+name = "rag-chatbot-backend"
+version = "0.1.0"
+description = "RAG chatbot backend for Physical AI & Humanoid Robotics documentation"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi==0.104.1",
+    "uvicorn[standard]==0.24.0",
+    # 🔑 CHANGED: Replaced openai with google-generativeai
+    "google-generativeai>=0.8.3", 
+    "qdrant-client==1.6.9",
+    "sqlalchemy[asyncio]==2.0.23",
+    "asyncpg==0.29.0",
+    "pydantic==2.5.0",
+    "pydantic-settings==2.1.0",
+    "python-dotenv==1.0.0",
+    "httpx==0.25.1",
+    "markdown==3.5.1",
+    "beautifulsoup4==4.12.2",
+    "python-multipart==0.0.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==7.4.3",
+    "pytest-asyncio==0.21.1",
+    "pytest-cov==4.1.0",
+    "black==23.11.0",
+    "ruff==0.1.6",
+    "mypy==1.7.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+select = ["E", "F", "I", "N", "W"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false

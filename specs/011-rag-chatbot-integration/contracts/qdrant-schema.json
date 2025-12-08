@@ -1,0 +1,187 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Qdrant Collection Configuration",
+  "description": "Schema and configuration for the documentation_chunks collection in Qdrant Cloud",
+  "version": "1.0.0",
+  "collection_name": "documentation_chunks",
+  "vectors": {
+    "size": 1536,
+    "distance": "Cosine",
+    "description": "1536-dimensional embeddings from OpenAI text-embedding-3-small model"
+  },
+  "payload_schema": {
+    "description": "Metadata stored with each vector",
+    "properties": {
+      "chunk_id": {
+        "type": "string",
+        "format": "uuid",
+        "description": "Unique identifier for the chunk (UUID v4)",
+        "example": "550e8400-e29b-41d4-a716-446655440000"
+      },
+      "title": {
+        "type": "keyword",
+        "description": "Document title (from frontmatter or filename)",
+        "example": "ROS2 Fundamentals"
+      },
+      "file_path": {
+        "type": "keyword",
+        "description": "Relative path to source markdown/MDX file",
+        "example": "docs/ros2/fundamentals.md"
+      },
+      "chunk_text": {
+        "type": "text",
+        "description": "Actual text content of the chunk (~1000 words)",
+        "example": "ROS2 is a flexible framework for writing robot software..."
+      },
+      "chunk_index": {
+        "type": "integer",
+        "description": "Index of chunk within document (0-based)",
+        "example": 0
+      },
+      "total_chunks": {
+        "type": "integer",
+        "description": "Total number of chunks in source document",
+        "example": 5
+      },
+      "metadata": {
+        "type": "object",
+        "description": "Additional metadata from document frontmatter",
+        "properties": {
+          "frontmatter": {
+            "type": "object",
+            "properties": {
+              "sidebar_position": {
+                "type": "integer",
+                "example": 1
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "example": ["ROS2", "fundamentals"]
+              }
+            }
+          },
+          "indexed_at": {
+            "type": "string",
+            "format": "date-time",
+            "example": "2025-12-01T12:00:00.000Z"
+          }
+        }
+      }
+    }
+  },
+  "indexes": [
+    {
+      "field": "file_path",
+      "type": "keyword",
+      "description": "Index for filtering by file path"
+    },
+    {
+      "field": "title",
+      "type": "keyword",
+      "description": "Index for filtering by document title"
+    }
+  ],
+  "search_configuration": {
+    "description": "Recommended search parameters",
+    "similarity_threshold": 0.7,
+    "top_k": 5,
+    "score_threshold_description": "Minimum cosine similarity score to include result (prevents weak matches)"
+  },
+  "python_client_example": {
+    "description": "Example Python code to create collection",
+    "code": "from qdrant_client import QdrantClient\nfrom qdrant_client.models import Distance, VectorParams, PayloadSchemaType\n\nclient = QdrantClient(\n    url='<QDRANT_URL>',\n    api_key='<QDRANT_API_KEY>'\n)\n\nclient.create_collection(\n    collection_name='documentation_chunks',\n    vectors_config=VectorParams(\n        size=1536,\n        distance=Distance.COSINE\n    )\n)\n\n# Create payload indexes for filtering\nclient.create_payload_index(\n    collection_name='documentation_chunks',\n    field_name='file_path',\n    field_schema=PayloadSchemaType.KEYWORD\n)\n\nclient.create_payload_index(\n    collection_name='documentation_chunks',\n    field_name='title',\n    field_schema=PayloadSchemaType.KEYWORD\n)"
+  },
+  "sample_point": {
+    "description": "Example point structure for insertion",
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "vector": [
+      0.023,
+      -0.012,
+      0.045,
+      "... (1536 dimensions total)"
+    ],
+    "payload": {
+      "chunk_id": "550e8400-e29b-41d4-a716-446655440000",
+      "title": "ROS2 Fundamentals",
+      "file_path": "docs/ros2/fundamentals.md",
+      "chunk_text": "ROS2 (Robot Operating System 2) is a flexible framework for writing robot software. It provides services like hardware abstraction, low-level device control, message-passing between processes, and package management...",
+      "chunk_index": 0,
+      "total_chunks": 3,
+      "metadata": {
+        "frontmatter": {
+          "sidebar_position": 1,
+          "tags": [
+            "ROS2",
+            "fundamentals"
+          ]
+        },
+        "indexed_at": "2025-12-01T12:00:00.000Z"
+      }
+    }
+  },
+  "search_example": {
+    "description": "Example search query",
+    "code": "from qdrant_client.models import Filter, FieldCondition, MatchValue\n\nresults = client.search(\n    collection_name='documentation_chunks',\n    query_vector=query_embedding,  # 1536-dim vector from OpenAI\n    limit=5,\n    score_threshold=0.7,\n    with_payload=True\n)\n\n# Optional: filter by file path\nresults_filtered = client.search(\n    collection_name='documentation_chunks',\n    query_vector=query_embedding,\n    limit=5,\n    score_threshold=0.7,\n    query_filter=Filter(\n        must=[\n            FieldCondition(\n                key='file_path',\n                match=MatchValue(value='docs/ros2/fundamentals.md')\n            )\n        ]\n    ),\n    with_payload=True\n)"
+  },
+  "capacity_estimates": {
+    "description": "Storage capacity estimates for Qdrant free tier",
+    "free_tier_storage": "1 GB",
+    "vector_size_bytes": 6144,
+    "payload_size_bytes_avg": 2000,
+    "total_per_point_bytes": 8144,
+    "estimated_max_points": 122000,
+    "realistic_max_points": 10000,
+    "notes": [
+      "Free tier provides 1 GB storage (~10,000 chunks with realistic payload sizes)",
+      "Each point consumes ~8 KB (6 KB vector + 2 KB payload)",
+      "1000 documentation pages chunked at 1000 words = ~3000 chunks",
+      "Plenty of headroom for large documentation sites"
+    ]
+  },
+  "maintenance": {
+    "description": "Collection maintenance operations",
+    "backup": {
+      "description": "Qdrant Cloud provides automatic backups (paid tiers only)",
+      "manual_backup_code": "# Export collection to snapshot\nclient.create_snapshot(collection_name='documentation_chunks')\n\n# Download snapshot\nsnapshot = client.list_snapshots(collection_name='documentation_chunks')[0]\nclient.recover_snapshot(collection_name='documentation_chunks', snapshot_name=snapshot.name)"
+    },
+    "reindexing": {
+      "description": "Full re-indexing when documentation changes significantly",
+      "steps": [
+        "1. Delete existing collection: client.delete_collection('documentation_chunks')",
+        "2. Recreate collection with same configuration",
+        "3. Run indexing script: python scripts/index_docs.py"
+      ]
+    },
+    "monitoring": {
+      "description": "Monitor collection health and usage",
+      "code": "# Get collection info\ninfo = client.get_collection('documentation_chunks')\nprint(f'Points count: {info.points_count}')\nprint(f'Vectors size: {info.vectors_count}')\nprint(f'Segments count: {info.segments_count}')"
+    }
+  },
+  "performance_tuning": {
+    "description": "Optimization recommendations",
+    "recommendations": [
+      {
+        "setting": "HNSW ef_construct",
+        "default": 100,
+        "recommended": 200,
+        "reason": "Higher ef_construct improves search accuracy (trade-off: slower indexing)"
+      },
+      {
+        "setting": "HNSW M",
+        "default": 16,
+        "recommended": 16,
+        "reason": "Default is optimal for most use cases"
+      },
+      {
+        "setting": "Quantization",
+        "default": "disabled",
+        "recommended": "scalar",
+        "reason": "Scalar quantization reduces memory usage by 4x with minimal accuracy loss"
+      }
+    ],
+    "quantization_example": "from qdrant_client.models import ScalarQuantization, QuantizationConfig\n\nclient.create_collection(\n    collection_name='documentation_chunks',\n    vectors_config=VectorParams(size=1536, distance=Distance.COSINE),\n    quantization_config=QuantizationConfig(\n        scalar=ScalarQuantization(\n            type='int8',\n            quantile=0.99,\n            always_ram=True\n        )\n    )\n)"
+  }
+}
