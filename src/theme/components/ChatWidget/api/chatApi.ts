@@ -5,7 +5,7 @@
  */
 
 const API_BASE_URL = process.env.NODE_ENV === 'production'
-  ? 'https://chatapi-production-ea84.up.railway.app'
+  ? 'https://humanoid-ai-book.onrender.com'
   : 'http://localhost:8000';
 
 export interface ChatRequest {
