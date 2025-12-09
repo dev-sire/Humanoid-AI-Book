@@ -4,9 +4,11 @@
  * Provides functions to interact with the FastAPI backend.
  */
 
-const API_BASE_URL = process.env.NODE_ENV === 'production'
-  ? 'https://humanoid-ai-book.onrender.com'
-  : 'http://localhost:8000';
+// const API_BASE_URL = process.env.NODE_ENV === 'production'
+//   ? 'https://rag-chatbot-backend-cjwy.onrender.com'
+//   : 'http://localhost:8000';
+
+const API_BASE_URL ='https://rag-chatbot-backend-cjwy.onrender.com';
 
 export interface ChatRequest {
   message: string;
