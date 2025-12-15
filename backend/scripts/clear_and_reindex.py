@@ -1,9 +1,3 @@
-"""
-Clear Qdrant collection and reindex all documents.
-
-This script deletes the existing collection and reindexes all documentation.
-"""
-
 import asyncio
 import logging
 import sys

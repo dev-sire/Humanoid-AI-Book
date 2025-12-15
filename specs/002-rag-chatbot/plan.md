@@ -1,6 +1,6 @@
 # Implementation Plan: RAG Chatbot Integration
 
-**Branch**: `011-rag-chatbot-integration` | **Date**: 2025-12-01 | **Spec**: [spec.md](./spec.md)
+**Branch**: `011-rag-chatbot-integration` | **Date**: 2025-12-13 | **Spec**: [spec.md](./spec.md)
 **Input**: Feature specification from `/specs/011-rag-chatbot-integration/spec.md`
 
 ## Summary
@@ -492,7 +492,7 @@ After this plan is complete:
 - [ ] Query enhancement with conversation context (deferred)
 - [ ] History retrieval endpoint implemented (deferred)
 - [x] Production deployment completed (Railway, 2025-12-03)
-- [x] CORS configured for production domain (https://bilalmk.github.io)
+- [x] CORS configured for production domain (https://humanoid-robotics-book-fawn.vercel.app)
 
 ### Lessons Learned
 

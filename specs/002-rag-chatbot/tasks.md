@@ -2,8 +2,8 @@
 
 **Feature**: 011-rag-chatbot-integration
 **Branch**: `011-rag-chatbot-integration`
-**Generated**: 2025-12-01
-**Total Tasks**: 52
+**Generated**: 2025-12-13
+**Total Tasks**: 63
 
 ---
 

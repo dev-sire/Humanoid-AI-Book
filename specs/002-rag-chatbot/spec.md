@@ -1,7 +1,7 @@
 # Feature Specification: RAG Chatbot Integration
 
 **Feature Branch**: `011-rag-chatbot-integration`
-**Created**: 2025-12-01
+**Created**: 2025-12-13
 **Status**: Draft
 **Input**: User description: "Build a production-ready RAG (Retrieval-Augmented Generation) chatbot system that integrates with our Docusaurus documentation website to answer user questions based on the book content."
 
@@ -466,7 +466,7 @@ self.engine = create_async_engine(
   - Production: https://chatapi-production-ea84.up.railway.app (Railway)
 - **Frontend**:
   - Local: http://localhost:3000/ai-native-book/
-  - Production: https://bilalmk.github.io/ai-native-book/ (GitHub Pages)
+  - Production: https://humanoid-robotics-book-fawn.vercel.app/ (VERCEL)
 
 ### Critical Fix Applied: Similarity Threshold Optimization
 
@@ -708,7 +708,7 @@ python3 scripts/clear_and_reindex.py
 - `QDRANT_API_KEY`: Qdrant API authentication
 - `QDRANT_COLLECTION_NAME`: ai_native_book
 - `DATABASE_URL`: Neon Postgres connection string (with SSL)
-- `CORS_ORIGINS`: https://bilalmk.github.io
+- `CORS_ORIGINS`: https://humanoid-robotics-book-fawn.vercel.app
 - `APP_ENV`: production
 - `LOG_LEVEL`: INFO
 
