@@ -1,7 +1,7 @@
 ---
 id: chapter-1
-title: "Chapter 1: Introduction to Physical AI"
-sidebar_label: "Chapter 1: Intro to Physical AI"
+title: "باب 1: جسمانی مصنوعی ذہانت کا تعارف"
+sidebar_label: "باب 1: جسمانی مصنوعی ذہانت کا تعارف"
 week: 1
 ---
 

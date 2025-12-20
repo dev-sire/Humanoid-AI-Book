@@ -1,25 +1,27 @@
 ---
 id: intro
+title: "تعارف"
+sidebar_label: "تعارف"
 sidebar_position: 1
 ---
 
-# Introduction
+#تعارف
 
-Welcome to the Physical AI & Humanoid Robotics Book!
+فزیکل AI اور Humanoid روبوٹکس بک میں خوش آمدید!
 
-This book is designed to guide developers, researchers, and enthusiasts through the fascinating and rapidly evolving fields of Physical AI and Humanoid Robotics. Our purpose is to provide a comprehensive understanding of how artificial intelligence is integrated into physical systems, focusing specifically on the challenges and innovations in creating intelligent humanoid robots.
+یہ کتاب ڈیولپرز، محققین، اور شائقین کی فزیکل AI اور ہیومنائیڈ روبوٹکس کے دلچسپ اور تیزی سے ترقی پذیر شعبوں میں رہنمائی کے لیے بنائی گئی ہے۔ ہمارا مقصد ایک جامع تفہیم فراہم کرنا ہے کہ کس طرح مصنوعی ذہانت کو جسمانی نظاموں میں ضم کیا جاتا ہے، خاص طور پر ذہین انسان نما روبوٹس بنانے میں درپیش چیلنجوں اور اختراعات پر توجہ مرکوز کرتے ہوئے۔
 
-## Key Themes & Learning Objectives
+## کلیدی تھیمز اور سیکھنے کے مقاصد
 
-Throughout this book, you will explore a variety of critical topics, including:
-*   **The Convergence of AI and Robotics:** Understanding how advanced AI algorithms drive the capabilities of physical robots.
-*   **Humanoid Design and Mechanics:** Delving into the mechanical and electrical engineering principles behind humanoid forms.
-*   **Perception and Cognition:** Exploring how robots perceive their environment and make intelligent decisions.
-*   **Control and Manipulation:** Learning about the software and hardware enabling complex movements and interactions.
-*   **Ethical and Societal Implications:** Discussing the broader impact of advanced robotics on humanity.
+اس پوری کتاب میں، آپ مختلف قسم کے اہم موضوعات کو تلاش کریں گے، بشمول:
+**اے آئی اور روبوٹکس کا کنورجنس:** یہ سمجھنا کہ کس طرح جدید AI الگورتھم جسمانی روبوٹ کی صلاحیتوں کو آگے بڑھاتے ہیں۔
+* **ہیومینائڈ ڈیزائن اور میکینکس:** ہیومنائڈ شکلوں کے پیچھے مکینیکل اور الیکٹریکل انجینئرنگ کے اصولوں کو تلاش کرنا۔
+** ادراک اور ادراک:** یہ دریافت کرنا کہ روبوٹ اپنے ماحول کو کیسے سمجھتے ہیں اور ذہین فیصلے کرتے ہیں۔
+* **کنٹرول اور ہیرا پھیری:** پیچیدہ حرکات اور تعاملات کو فعال کرنے والے سافٹ ویئر اور ہارڈ ویئر کے بارے میں سیکھنا۔
+* **اخلاقی اور معاشرتی مضمرات:** انسانیت پر جدید روبوٹکس کے وسیع اثرات پر تبادلہ خیال۔
 
-By the end of this book, you will be able to:
-*   Grasp the fundamental concepts of Physical AI and humanoid robotics.
-*   Understand the interdisciplinary nature of these fields, combining AI, mechanics, and control systems.
-*   Identify key challenges and current research directions.
-*   Appreciate the potential applications and ethical considerations of advanced robotics.
+اس کتاب کے اختتام تک، آپ اس قابل ہو جائیں گے:
+* فزیکل اے آئی اور ہیومنائیڈ روبوٹکس کے بنیادی تصورات کو سمجھیں۔
+* ان شعبوں کی بین الضابطہ نوعیت کو سمجھیں، AI، میکانکس اور کنٹرول سسٹمز کو ملا کر۔
+* اہم چیلنجوں اور موجودہ تحقیقی سمتوں کی نشاندہی کریں۔
+* اعلی درجے کی روبوٹکس کے ممکنہ ایپلی کیشنز اور اخلاقی تحفظات کی تعریف کریں۔

@@ -1,7 +1,7 @@
 ---
 id: chapter-3
-title: "Chapter 3: Digital Twin & Simulation"
-sidebar_label: "Chapter 3: Digital Twin & Simulation"
+title: "باب 3: ڈیجیٹل جڑواں اور نقلی۔"
+sidebar_label: "باب 3: ڈیجیٹل جڑواں اور نقلی۔"
 week: 4-5
 ---
 

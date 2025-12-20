@@ -1,6 +1,6 @@
 {
   "id": "chapter-3",
-  "title": "Chapter 3: Digital Twin & Simulation",
+  "title": "باب 3: ڈیجیٹل جڑواں اور نقلی۔",
   "description": "جائزہ",
   "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/chapter-3.md",
   "sourceDirName": ".",
@@ -11,21 +11,21 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/chapter-3.md",
   "tags": [],
   "version": "current",
-  "lastUpdatedBy": null,
-  "lastUpdatedAt": null,
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1766232432000,
   "frontMatter": {
     "id": "chapter-3",
-    "title": "Chapter 3: Digital Twin & Simulation",
-    "sidebar_label": "Chapter 3: Digital Twin & Simulation",
+    "title": "باب 3: ڈیجیٹل جڑواں اور نقلی۔",
+    "sidebar_label": "باب 3: ڈیجیٹل جڑواں اور نقلی۔",
     "week": "4-5"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Chapter 2: ROS 2 Fundamentals",
+    "title": "باب 2: روبوٹ آپریٹنگ سسٹمز 2 بنیادی باتیں",
     "permalink": "/ur/docs/chapter-2"
   },
   "next": {
-    "title": "Chapter 4: NVIDIA Isaac Integration",
+    "title": "باب 4: NVIDIA اسحاق انٹیگریشن",
     "permalink": "/ur/docs/chapter-4"
   }
 }

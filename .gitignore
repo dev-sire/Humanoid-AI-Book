@@ -10,3 +10,5 @@ build/
 Thumbs.db
 *.tmp
 *.swp
+.docusaurus/
+.cache/

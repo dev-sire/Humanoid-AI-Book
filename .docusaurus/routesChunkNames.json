@@ -1,105 +1,62 @@
 {
-  "/__docusaurus/debug-5ff": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
+  "/ur/docs-6a9": {
+    "__comp": "5e95c892",
     "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
+      "plugin": "aba21aa0"
     }
   },
-  "/__docusaurus/debug/config-5ba": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
+  "/ur/docs-337": {
+    "__comp": "a7bd4aaa",
+    "__props": "04f2558c"
   },
-  "/__docusaurus/debug/content-a2b": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
+  "/ur/docs-f92": {
+    "__comp": "a94703ab"
+  },
+  "/ur/docs/chapter-1-bd0": {
+    "__comp": "17896441",
+    "content": "9d50b37d"
+  },
+  "/ur/docs/chapter-2-cb6": {
+    "__comp": "17896441",
+    "content": "3a955e63"
+  },
+  "/ur/docs/chapter-3-7af": {
+    "__comp": "17896441",
+    "content": "a65be4c1"
+  },
+  "/ur/docs/chapter-4-b43": {
+    "__comp": "17896441",
+    "content": "f34dd061"
+  },
+  "/ur/docs/chapter-5-61c": {
+    "__comp": "17896441",
+    "content": "b87446bc"
+  },
+  "/ur/docs/chapter-6-ec3": {
+    "__comp": "17896441",
+    "content": "0c759d60"
+  },
+  "/ur/docs/glossary-c97": {
+    "__comp": "17896441",
+    "content": "8b8850e2"
+  },
+  "/ur/docs/intro-c82": {
+    "__comp": "17896441",
+    "content": "9e1a014e"
+  },
+  "/ur/docs/module-summaries-6fd": {
+    "__comp": "17896441",
+    "content": "12a4bcf1"
+  },
+  "/ur/docs/syllabus-0cf": {
+    "__comp": "17896441",
+    "content": "3963b951"
+  },
+  "/ur/-3b1": {
+    "__comp": "c4f5d8e4",
     "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
+      "plugin": "a7456010"
     },
-    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
-  },
-  "/__docusaurus/debug/globalData-c3c": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/metadata-156": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/registry-88c": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/routes-000": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/docs-a46": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
-    "__context": {
-      "plugin": "plugin---docsaba-d7c"
-    }
-  },
-  "/docs-d6a": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---docs-005-788"
-  },
-  "/docs-c12": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
-  },
-  "/docs/chapter-1-8d5": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-chapter-15-d-4-82f"
-  },
-  "/docs/chapter-2-5b4": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-chapter-28-c-5-c56"
-  },
-  "/docs/chapter-3-17d": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-chapter-3544-6e6"
-  },
-  "/docs/chapter-4-763": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-chapter-4-d-10-44e"
-  },
-  "/docs/chapter-5-6d5": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-chapter-586-d-223"
-  },
-  "/docs/chapter-6-f49": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-chapter-63-f-0-84e"
-  },
-  "/docs/glossary-b39": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-glossarye-74-cec"
-  },
-  "/docs/intro-5ac": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-intro-0-e-3-be1"
-  },
-  "/docs/module-summaries-bf6": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-summaries-510-ea9"
-  },
-  "/docs/syllabus-e44": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-syllabus-016-781"
-  },
-  "/-2e1": {
-    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
-    "__context": {
-      "plugin": "plugin---a-74-9d6"
-    },
-    "config": "config---5-e-9-4f3"
+    "config": "5e9f5e1a"
   }
 }

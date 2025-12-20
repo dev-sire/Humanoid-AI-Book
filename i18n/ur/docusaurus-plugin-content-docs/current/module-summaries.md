@@ -1,19 +1,19 @@
 ---
 id: module-summaries
-title: Module Summaries
-sidebar_label: Module Summaries
+title: "ماڈیول کا خلاصہ"
+sidebar_label: "ماڈیول کا خلاصہ"
 ---
 
-# Module Summaries
+# ماڈیول کے خلاصے
 
-## Module 1: Foundations (Chapters 1-2)
+## ماڈیول 1: بنیادیں (باب 1-2)
 
-This module introduces the fundamental concepts of Physical AI and the ROS 2 framework. By the end of this module, you will understand what Physical AI is and how to use the basic features of ROS 2 to build simple robotic applications.
+یہ ماڈیول فزیکل AI اور ROS 2 فریم ورک کے بنیادی تصورات کو متعارف کراتا ہے۔ اس ماڈیول کے اختتام تک، آپ سمجھ جائیں گے کہ فزیکل AI کیا ہے اور سادہ روبوٹک ایپلی کیشنز بنانے کے لیے ROS 2 کی بنیادی خصوصیات کو کیسے استعمال کیا جائے۔
 
-## Module 2: Simulation (Chapters 3-4)
+## ماڈیول 2: نقلی (باب 3-4)
 
-This module focuses on simulation, a critical tool for modern robotics development. You will learn about digital twins, the Gazebo simulator, and the advanced capabilities of NVIDIA Isaac Sim for creating photorealistic and physically accurate simulations.
+یہ ماڈیول تخروپن پر مرکوز ہے، جو جدید روبوٹکس کی ترقی کے لیے ایک اہم ٹول ہے۔ آپ ڈیجیٹل جڑواں بچوں، Gazebo سمیلیٹر، اور NVIDIA Isaac Sim کی اعلیٰ ترین صلاحیتوں کے بارے میں جانیں گے جو کہ فوٹو ریئلسٹک اور جسمانی طور پر درست سمولیشنز تخلیق کر سکتے ہیں۔
 
-## Module 3: Advanced AI and Deployment (Chapters 5-6)
+## ماڈیول 3: ایڈوانسڈ AI اور تعیناتی (باب 5-6)
 
-This module explores the cutting edge of AI in robotics, including Vision-Language-Action (VLA) models. You will also learn about the practical challenges of controlling humanoid robots and deploying AI models to physical hardware.
+یہ ماڈیول روبوٹکس میں AI کے جدید ترین پہلو کو دریافت کرتا ہے، بشمول Vision-Language-Action (VLA) ماڈلز۔ آپ ہیومنائیڈ روبوٹس کو کنٹرول کرنے اور AI ماڈلز کو فزیکل ہارڈویئر میں تعینات کرنے کے عملی چیلنجوں کے بارے میں بھی جانیں گے۔

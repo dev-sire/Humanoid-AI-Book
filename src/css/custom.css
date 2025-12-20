@@ -1,7 +1,47 @@
 /**
  * Global theme customization
  * Physical AI & Humanoid Robotics
- */
+*/
+
+/* Import Noto Nastaliq Urdu from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap');
+
+/* Apply to all Urdu content */
+html[lang="ur"] {
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+}
+
+html[lang="ur"] body {
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  font-size: 1.1rem; /* Slightly larger for better readability */
+  line-height: 2; /* More spacing for Nastaliq script */
+}
+
+/* Adjust headings for Urdu */
+html[lang="ur"] h1,
+html[lang="ur"] h2,
+html[lang="ur"] h3,
+html[lang="ur"] h4,
+html[lang="ur"] h5,
+html[lang="ur"] h6 {
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+/* Adjust sidebar for Urdu */
+html[lang="ur"] .theme-doc-sidebar-item-link {
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  font-size: 1rem;
+}
+
+/* Code blocks should remain in monospace */
+html[lang="ur"] code,
+html[lang="ur"] pre {
+  font-family: 'Courier New', Courier, monospace;
+  direction: ltr;
+  text-align: left;
+}
 
 .navbar {
   backdrop-filter: blur(12px);
@@ -18,6 +58,7 @@
 a:hover {
   text-decoration: none;
 }
+
 
 :root {
   /* Primary brand color (AI Teal) */
@@ -77,4 +118,63 @@ a:hover {
 
   /* Nav */
   --ifm-navbar-background-color: #020617cc;
+}
+/* Language dropdown styling */
+.navbar__link--active {
+  color: var(--ifm-color-primary);
+}
+
+/* Dropdown menu styling */
+.dropdown__menu {
+  min-width: 120px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  background-color: #ffffff;  /* Light mode background */
+}
+
+.dropdown__link {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  color: #0f172a;  /* Dark text for light mode */
+}
+
+.dropdown__link:hover {
+  background-color: #a5f3fc;  /* Your primary-lightest */
+  color: #0e7490;  /* Your primary-darkest */
+}
+
+.dropdown__link--active {
+  background-color: #67e8f9;  /* Your primary-lighter */
+  color: #155e75;  /* Darker for contrast */
+  font-weight: 600;
+}
+
+/* Mobile responsive */
+@media (max-width: 996px) {
+  .dropdown__menu {
+    width: 100%;
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .dropdown__menu {
+  background-color: #0f172a;  /* Slightly lighter than your background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  border: 1px solid #1e293b;  /* Subtle border */
+}
+
+[data-theme='dark'] .dropdown__link {
+  color: #e5e7eb;  /* Your dark mode text color */
+}
+
+[data-theme='dark'] .dropdown__link:hover {
+  background-color: #1e293b;
+  color: #22d3ee;  /* Your primary glow color */
+}
+
+[data-theme='dark'] .dropdown__link--active {
+  background-color: #0e7490;  /* Your primary-darker */
+  color: #cffafe;  /* Your primary-lightest for dark mode */
 }

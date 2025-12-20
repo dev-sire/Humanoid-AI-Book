@@ -1,0 +1,32 @@
+{
+  "homepage.subtitle.part1": {
+    "message": "پل بنانا"
+  },
+  "homepage.subtitle.digital": {
+    "message": "ڈیجیٹل انٹیلیجنس"
+  },
+  "homepage.subtitle.part2": {
+    "message": "کے ساتھ"
+  },
+  "homepage.subtitle.robotic": {
+    "message": "حقیقی دنیا کے روبوٹک سسٹمز"
+  },
+  "homepage.subtitle.part3": {
+    "message": "— نظریہ سے تعیناتی تک۔"
+  },
+  "homepage.startReading": {
+    "message": "پڑھنا شروع کریں"
+  },
+  "homepage.glossary": {
+    "message": "لغت"
+  },
+  "homepage.meta.physicalAI": {
+    "message": "فزیکل AI"
+  },
+  "homepage.meta.humanoids": {
+    "message": "انسان نما روبوٹس"
+  },
+  "homepage.meta.robotics": {
+    "message": "حقیقی دنیا کی روبوٹکس"
+  }
+}

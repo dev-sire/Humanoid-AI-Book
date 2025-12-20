@@ -1,6 +1,6 @@
 {
   "id": "chapter-4",
-  "title": "Chapter 4: NVIDIA Isaac Integration",
+  "title": "باب 4: NVIDIA اسحاق انٹیگریشن",
   "description": "جائزہ",
   "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/chapter-4.md",
   "sourceDirName": ".",
@@ -11,21 +11,21 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/chapter-4.md",
   "tags": [],
   "version": "current",
-  "lastUpdatedBy": null,
-  "lastUpdatedAt": null,
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1766232432000,
   "frontMatter": {
     "id": "chapter-4",
-    "title": "Chapter 4: NVIDIA Isaac Integration",
-    "sidebar_label": "Chapter 4: NVIDIA Isaac Integration",
+    "title": "باب 4: NVIDIA اسحاق انٹیگریشن",
+    "sidebar_label": "باب 4: NVIDIA اسحاق انٹیگریشن",
     "week": "6-7"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Chapter 3: Digital Twin & Simulation",
+    "title": "باب 3: ڈیجیٹل جڑواں اور نقلی۔",
     "permalink": "/ur/docs/chapter-3"
   },
   "next": {
-    "title": "Chapter 5: VLA Models",
+    "title": "باب 5: ویژن-لینگویج-ایکشن (VLA) ماڈلز",
     "permalink": "/ur/docs/chapter-5"
   }
 }
