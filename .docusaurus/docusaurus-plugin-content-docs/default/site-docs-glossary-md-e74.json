@@ -11,7 +11,10 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/glossary.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1765017248000,
   "frontMatter": {
+    "id": "glossary",
     "title": "Glossary",
     "sidebar_label": "Glossary"
   },

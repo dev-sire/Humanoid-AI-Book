@@ -1,0 +1,31 @@
+{
+  "id": "chapter-2",
+  "title": "Chapter 2: ROS 2 Fundamentals",
+  "description": "جائزہ",
+  "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/chapter-2.md",
+  "sourceDirName": ".",
+  "slug": "/chapter-2",
+  "permalink": "/ur/docs/chapter-2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/chapter-2.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": null,
+  "lastUpdatedAt": null,
+  "frontMatter": {
+    "id": "chapter-2",
+    "title": "Chapter 2: ROS 2 Fundamentals",
+    "sidebar_label": "Chapter 2: ROS 2 Fundamentals",
+    "week": "2-3"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 1: Intro to Physical AI",
+    "permalink": "/ur/docs/chapter-1"
+  },
+  "next": {
+    "title": "Chapter 3: Digital Twin & Simulation",
+    "permalink": "/ur/docs/chapter-3"
+  }
+}

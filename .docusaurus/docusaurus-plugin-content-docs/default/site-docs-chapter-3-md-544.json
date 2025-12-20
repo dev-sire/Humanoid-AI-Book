@@ -11,7 +11,10 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/chapter-3.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1765017248000,
   "frontMatter": {
+    "id": "chapter-3",
     "title": "Chapter 3: Digital Twin & Simulation",
     "sidebar_label": "Chapter 3: Digital Twin & Simulation",
     "week": "4-5"

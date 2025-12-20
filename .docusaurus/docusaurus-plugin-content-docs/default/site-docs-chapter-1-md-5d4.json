@@ -11,7 +11,10 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/chapter-1.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1765017248000,
   "frontMatter": {
+    "id": "chapter-1",
     "title": "Chapter 1: Introduction to Physical AI",
     "sidebar_label": "Chapter 1: Intro to Physical AI",
     "week": 1

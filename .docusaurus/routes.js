@@ -39,75 +39,74 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '0bf'),
+    component: ComponentCreator('/docs', 'a46'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'd17'),
+        component: ComponentCreator('/docs', 'd6a'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '809'),
+            component: ComponentCreator('/docs', 'c12'),
             routes: [
               {
                 path: '/docs/chapter-1',
-                component: ComponentCreator('/docs/chapter-1', 'f92'),
+                component: ComponentCreator('/docs/chapter-1', '8d5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/chapter-2',
-                component: ComponentCreator('/docs/chapter-2', '6da'),
+                component: ComponentCreator('/docs/chapter-2', '5b4'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/chapter-3',
-                component: ComponentCreator('/docs/chapter-3', 'aaa'),
+                component: ComponentCreator('/docs/chapter-3', '17d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/chapter-4',
-                component: ComponentCreator('/docs/chapter-4', 'f8f'),
+                component: ComponentCreator('/docs/chapter-4', '763'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/chapter-5',
-                component: ComponentCreator('/docs/chapter-5', 'bb8'),
+                component: ComponentCreator('/docs/chapter-5', '6d5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/chapter-6',
-                component: ComponentCreator('/docs/chapter-6', '9c2'),
+                component: ComponentCreator('/docs/chapter-6', 'f49'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/glossary',
-                component: ComponentCreator('/docs/glossary', 'a11'),
+                component: ComponentCreator('/docs/glossary', 'b39'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/intro',
-                component: ComponentCreator('/docs/intro', '61d'),
+                component: ComponentCreator('/docs/intro', '5ac'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/module-summaries',
-                component: ComponentCreator('/docs/module-summaries', '2dd'),
+                component: ComponentCreator('/docs/module-summaries', 'bf6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/syllabus',
-                component: ComponentCreator('/docs/syllabus', '91e'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                component: ComponentCreator('/docs/syllabus', 'e44'),
+                exact: true
               }
             ]
           }

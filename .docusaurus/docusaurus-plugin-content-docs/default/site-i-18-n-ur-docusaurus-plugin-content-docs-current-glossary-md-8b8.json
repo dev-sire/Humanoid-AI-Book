@@ -1,0 +1,30 @@
+{
+  "id": "glossary",
+  "title": "Glossary",
+  "description": "A comprehensive list of technical terms and AI-specific terminology used throughout the \"Physical AI & Humanoid Robotics\" book.",
+  "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/glossary.md",
+  "sourceDirName": ".",
+  "slug": "/glossary",
+  "permalink": "/ur/docs/glossary",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/glossary.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": null,
+  "lastUpdatedAt": null,
+  "frontMatter": {
+    "id": "glossary",
+    "title": "Glossary",
+    "sidebar_label": "Glossary"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 6: Humanoid Control & Deployment",
+    "permalink": "/ur/docs/chapter-6"
+  },
+  "next": {
+    "title": "Module Summaries",
+    "permalink": "/ur/docs/module-summaries"
+  }
+}

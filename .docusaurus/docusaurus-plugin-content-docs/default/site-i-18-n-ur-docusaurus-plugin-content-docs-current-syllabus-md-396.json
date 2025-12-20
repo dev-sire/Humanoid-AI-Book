@@ -1,0 +1,21 @@
+{
+  "id": "syllabus",
+  "title": "Example 13-Week Syllabus",
+  "description": "This syllabus provides an example of how the content of this book can be structured into a 13-week university course.",
+  "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/syllabus.md",
+  "sourceDirName": ".",
+  "slug": "/syllabus",
+  "permalink": "/ur/docs/syllabus",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/syllabus.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": null,
+  "lastUpdatedAt": null,
+  "frontMatter": {
+    "id": "syllabus",
+    "title": "Example 13-Week Syllabus",
+    "sidebar_label": "Example Syllabus"
+  }
+}

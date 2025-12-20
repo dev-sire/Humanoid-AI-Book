@@ -11,7 +11,10 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/chapter-5.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1765017248000,
   "frontMatter": {
+    "id": "chapter-5",
     "title": "Chapter 5: Vision-Language-Action (VLA) Models",
     "sidebar_label": "Chapter 5: VLA Models",
     "week": "8-9"

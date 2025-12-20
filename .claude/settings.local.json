@@ -6,7 +6,12 @@
       "Bash(powershell -Command:*)",
       "Bash(git checkout:*)",
       "Bash($env:SPECIFY_FEATURE=\"001-physical-ai-book\")",
-      "Bash(npm install)"
+      "Bash(npm install)",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1:*)",
+      "Bash(mkdir:*)",
+      "Bash(cat:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []

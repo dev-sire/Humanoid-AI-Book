@@ -57,8 +57,7 @@
             },
             {
               "id": "syllabus",
-              "path": "/docs/syllabus",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/syllabus"
             }
           ],
           "draftIds": [],

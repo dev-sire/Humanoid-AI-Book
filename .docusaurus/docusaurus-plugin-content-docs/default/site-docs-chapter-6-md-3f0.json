@@ -11,7 +11,10 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/chapter-6.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1765017248000,
   "frontMatter": {
+    "id": "chapter-6",
     "title": "Chapter 6: Humanoid Control & Deployment",
     "sidebar_label": "Chapter 6: Humanoid Control & Deployment",
     "week": "10-11"

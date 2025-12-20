@@ -1,0 +1,31 @@
+{
+  "id": "chapter-5",
+  "title": "Chapter 5: Vision-Language-Action (VLA) Models",
+  "description": "جائزہ",
+  "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/chapter-5.md",
+  "sourceDirName": ".",
+  "slug": "/chapter-5",
+  "permalink": "/ur/docs/chapter-5",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/chapter-5.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": null,
+  "lastUpdatedAt": null,
+  "frontMatter": {
+    "id": "chapter-5",
+    "title": "Chapter 5: Vision-Language-Action (VLA) Models",
+    "sidebar_label": "Chapter 5: VLA Models",
+    "week": "8-9"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 4: NVIDIA Isaac Integration",
+    "permalink": "/ur/docs/chapter-4"
+  },
+  "next": {
+    "title": "Chapter 6: Humanoid Control & Deployment",
+    "permalink": "/ur/docs/chapter-6"
+  }
+}

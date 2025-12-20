@@ -1,4 +1,5 @@
 ---
+id: chapter-3
 title: "Chapter 3: Digital Twin & Simulation"
 sidebar_label: "Chapter 3: Digital Twin & Simulation"
 week: 4-5
