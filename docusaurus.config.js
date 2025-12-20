@@ -27,8 +27,21 @@ const config = {
   
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ur'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+      },
+      ur: {
+        label: 'Urdu',
+        direction: 'rtl',
+        htmlLang: 'ur',
+      },
+    },
   },
+
 
   presets: [
     [
@@ -37,17 +50,18 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/dev-sire/Humanoid-AI-Book',
+          routeBasePath: 'docs',
+          id: 'default',
+          path: 'docs',
+          editUrl:'https://github.com/dev-sire/Humanoid-AI-Book',
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/dev-sire/Humanoid-AI-Book',
+          editUrl:'https://github.com/dev-sire/Humanoid-AI-Book',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -73,6 +87,10 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Chapters',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
           {
             href: 'https://github.com/dev-sire/Humanoid-AI-Book',

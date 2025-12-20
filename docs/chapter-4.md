@@ -1,4 +1,5 @@
 ---
+id: chapter-4
 title: "Chapter 4: NVIDIA Isaac Integration"
 sidebar_label: "Chapter 4: NVIDIA Isaac Integration"
 week: 6-7

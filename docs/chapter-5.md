@@ -1,4 +1,5 @@
 ---
+id: chapter-5
 title: "Chapter 5: Vision-Language-Action (VLA) Models"
 sidebar_label: "Chapter 5: VLA Models"
 week: 8-9

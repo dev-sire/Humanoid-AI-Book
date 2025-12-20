@@ -11,7 +11,10 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/module-summaries.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1764958905000,
   "frontMatter": {
+    "id": "module-summaries",
     "title": "Module Summaries",
     "sidebar_label": "Module Summaries"
   },
@@ -19,9 +22,5 @@
   "previous": {
     "title": "Glossary",
     "permalink": "/docs/glossary"
-  },
-  "next": {
-    "title": "Example Syllabus",
-    "permalink": "/docs/syllabus"
   }
 }

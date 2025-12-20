@@ -75,18 +75,32 @@ The implementation will follow an incremental delivery approach, prioritizing Us
 - [X] T029 Validate GitHub Pages deployment pipeline passes all GitHub Actions checks
 - [X] T030 Perform final review of all content for technical accuracy and clarity
 
+## Phase 6: Urdu Language Support
+
+- [ ] T031 Configure Docusaurus i18n settings for 'en' (default) and 'ur' in `docusaurus.config.js`
+- [ ] T032 Create the base i18n directory structure for Urdu: `i18n/ur/docusaurus-plugin-content-docs/current/`
+- [ ] T033 [P] Implement RTL support by creating or modifying CSS in `src/css/custom.css` (or equivalent theme stylesheet)
+- [ ] T034 [P] Add a language switcher component to the Docusaurus navbar, likely in a custom theme component like `src/theme/NavbarItem/LocaleDropdown/index.js` or `docusaurus.config.js` for theme configuration.
+- [ ] T035 [US3] Discover all existing Markdown content files under the `docs/` directory to be translated
+- [ ] T036 [P] [US3] Translate `docs/introduction.md` into Urdu, preserving code blocks, links, frontmatter, and file name, and save to `i18n/ur/docusaurus-plugin-content-docs/current/introduction.md`
+- [ ] T037 [P] [US3] Translate `docs/another-example.md` (placeholder, assuming this exists) into Urdu, preserving code blocks, links, frontmatter, and file name, and save to `i18n/ur/docusaurus-plugin-content-docs/current/another-example.md`
+- [ ] T038 [US3] Verify sidebar ordering and IDs are preserved for all Urdu content
+- [ ] T039 [US3] Perform a local Docusaurus build and thoroughly test the Urdu language toggle, content display, and RTL layout
+
 ## Dependencies
 
 User Story 1 must be substantially complete before User Story 2 can be fully addressed, as curriculum development depends on the existence of core content.
+Phase 5 tasks must be completed before Phase 6 tasks.
 
 ## Parallel Execution Examples
 
 - **User Story 1**: Tasks T010, T011, T013, T015, T017, T019, T021 can be worked on in parallel once the respective chapter drafts (T009, T012, T014, T016, T018, T020) are initiated.
 - **User Story 2**: Task T024 (creating module summaries) can be parallelized once multiple chapters are drafted.
+- **Phase 6**: T033 and T034 (RTL and language switcher) can be executed in parallel. T036 and T037 (translation tasks) can be executed in parallel once T035 (discovery) is complete.
 
 ## Suggested MVP Scope
 
-The Minimum Viable Product (MVP) for this feature includes completing all tasks under **Phase 1: Setup**, **Phase 2: Foundational**, and **Phase 3: User Story 1 - Learning Embodied AI (P1)**. This ensures a functional book with core educational content for students.
+The Minimum Viable Product (MVP) for this feature includes completing all tasks under **Phase 1: Setup**, **Phase 2: Foundational**, **Phase 3: User Story 1 - Learning Embodied AI (P1)**, and **Phase 6: Urdu Language Support**. This ensures a functional book with core educational content for students and introduces full Urdu language support with a UI language toggle.
 
 ## Format Validation
 

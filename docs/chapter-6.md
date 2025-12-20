@@ -1,4 +1,5 @@
 ---
+id: chapter-6
 title: "Chapter 6: Humanoid Control & Deployment"
 sidebar_label: "Chapter 6: Humanoid Control & Deployment"
 week: 10-11

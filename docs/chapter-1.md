@@ -1,4 +1,5 @@
 ---
+id: chapter-1
 title: "Chapter 1: Introduction to Physical AI"
 sidebar_label: "Chapter 1: Intro to Physical AI"
 week: 1

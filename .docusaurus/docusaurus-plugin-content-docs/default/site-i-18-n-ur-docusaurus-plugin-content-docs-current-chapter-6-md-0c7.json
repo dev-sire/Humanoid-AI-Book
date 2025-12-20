@@ -1,0 +1,31 @@
+{
+  "id": "chapter-6",
+  "title": "Chapter 6: Humanoid Control & Deployment",
+  "description": "جائزہ",
+  "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/chapter-6.md",
+  "sourceDirName": ".",
+  "slug": "/chapter-6",
+  "permalink": "/ur/docs/chapter-6",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/chapter-6.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": null,
+  "lastUpdatedAt": null,
+  "frontMatter": {
+    "id": "chapter-6",
+    "title": "Chapter 6: Humanoid Control & Deployment",
+    "sidebar_label": "Chapter 6: Humanoid Control & Deployment",
+    "week": "10-11"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 5: VLA Models",
+    "permalink": "/ur/docs/chapter-5"
+  },
+  "next": {
+    "title": "Glossary",
+    "permalink": "/ur/docs/glossary"
+  }
+}

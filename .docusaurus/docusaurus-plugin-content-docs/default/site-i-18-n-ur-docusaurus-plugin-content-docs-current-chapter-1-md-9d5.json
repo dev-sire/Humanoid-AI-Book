@@ -1,0 +1,31 @@
+{
+  "id": "chapter-1",
+  "title": "Chapter 1: Introduction to Physical AI",
+  "description": "جائزہ",
+  "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/chapter-1.md",
+  "sourceDirName": ".",
+  "slug": "/chapter-1",
+  "permalink": "/ur/docs/chapter-1",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/chapter-1.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": null,
+  "lastUpdatedAt": null,
+  "frontMatter": {
+    "id": "chapter-1",
+    "title": "Chapter 1: Introduction to Physical AI",
+    "sidebar_label": "Chapter 1: Intro to Physical AI",
+    "week": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/ur/docs/intro"
+  },
+  "next": {
+    "title": "Chapter 2: ROS 2 Fundamentals",
+    "permalink": "/ur/docs/chapter-2"
+  }
+}

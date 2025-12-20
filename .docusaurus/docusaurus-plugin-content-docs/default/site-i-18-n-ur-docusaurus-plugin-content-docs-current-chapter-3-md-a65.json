@@ -1,0 +1,31 @@
+{
+  "id": "chapter-3",
+  "title": "Chapter 3: Digital Twin & Simulation",
+  "description": "جائزہ",
+  "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/chapter-3.md",
+  "sourceDirName": ".",
+  "slug": "/chapter-3",
+  "permalink": "/ur/docs/chapter-3",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/chapter-3.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": null,
+  "lastUpdatedAt": null,
+  "frontMatter": {
+    "id": "chapter-3",
+    "title": "Chapter 3: Digital Twin & Simulation",
+    "sidebar_label": "Chapter 3: Digital Twin & Simulation",
+    "week": "4-5"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 2: ROS 2 Fundamentals",
+    "permalink": "/ur/docs/chapter-2"
+  },
+  "next": {
+    "title": "Chapter 4: NVIDIA Isaac Integration",
+    "permalink": "/ur/docs/chapter-4"
+  }
+}

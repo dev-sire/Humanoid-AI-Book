@@ -11,13 +11,11 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/syllabus.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1764958905000,
   "frontMatter": {
+    "id": "syllabus",
     "title": "Example 13-Week Syllabus",
     "sidebar_label": "Example Syllabus"
-  },
-  "sidebar": "tutorialSidebar",
-  "previous": {
-    "title": "Module Summaries",
-    "permalink": "/docs/module-summaries"
   }
 }

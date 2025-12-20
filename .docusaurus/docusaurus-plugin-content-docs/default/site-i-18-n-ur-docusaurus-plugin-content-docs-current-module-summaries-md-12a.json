@@ -1,0 +1,26 @@
+{
+  "id": "module-summaries",
+  "title": "Module Summaries",
+  "description": "Module 1: Foundations (Chapters 1-2)",
+  "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/module-summaries.md",
+  "sourceDirName": ".",
+  "slug": "/module-summaries",
+  "permalink": "/ur/docs/module-summaries",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/module-summaries.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": null,
+  "lastUpdatedAt": null,
+  "frontMatter": {
+    "id": "module-summaries",
+    "title": "Module Summaries",
+    "sidebar_label": "Module Summaries"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Glossary",
+    "permalink": "/ur/docs/glossary"
+  }
+}

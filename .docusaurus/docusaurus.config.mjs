@@ -8,17 +8,29 @@ export default {
   "tagline": "A guide to bridging digital AI with real-world robotic systems.",
   "favicon": "img/favicon.ico",
   "url": "https://your-docusaurus-site.com",
-  "baseUrl": "/",
+  "baseUrl": "/ur/",
   "organizationName": "your-org",
   "projectName": "physical-ai-book",
   "onBrokenLinks": "throw",
   "i18n": {
     "defaultLocale": "en",
     "locales": [
-      "en"
+      "en",
+      "ur"
     ],
-    "path": "i18n",
-    "localeConfigs": {}
+    "localeConfigs": {
+      "en": {
+        "label": "English",
+        "direction": "ltr",
+        "htmlLang": "en-US"
+      },
+      "ur": {
+        "label": "Urdu",
+        "direction": "rtl",
+        "htmlLang": "ur"
+      }
+    },
+    "path": "i18n"
   },
   "presets": [
     [
@@ -26,7 +38,12 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.js",
-          "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book"
+          "routeBasePath": "docs",
+          "id": "default",
+          "path": "docs",
+          "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book",
+          "showLastUpdateTime": true,
+          "showLastUpdateAuthor": true
         },
         "blog": {
           "showReadingTime": true,
@@ -52,6 +69,12 @@ export default {
           "sidebarId": "tutorialSidebar",
           "position": "left",
           "label": "Chapters"
+        },
+        {
+          "type": "localeDropdown",
+          "position": "right",
+          "dropdownItemsBefore": [],
+          "dropdownItemsAfter": []
         },
         {
           "href": "https://github.com/dev-sire/Humanoid-AI-Book",

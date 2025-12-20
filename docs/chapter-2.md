@@ -1,4 +1,5 @@
 ---
+id: chapter-2
 title: "Chapter 2: ROS 2 Fundamentals"
 sidebar_label: "Chapter 2: ROS 2 Fundamentals"
 week: 2-3

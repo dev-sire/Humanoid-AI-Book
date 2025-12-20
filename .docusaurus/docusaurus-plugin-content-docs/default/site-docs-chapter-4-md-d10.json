@@ -11,7 +11,10 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/chapter-4.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1765017248000,
   "frontMatter": {
+    "id": "chapter-4",
     "title": "Chapter 4: NVIDIA Isaac Integration",
     "sidebar_label": "Chapter 4: NVIDIA Isaac Integration",
     "week": "6-7"
