@@ -1,7 +1,7 @@
 {
   "id": "syllabus",
-  "title": "Example 13-Week Syllabus",
-  "description": "This syllabus provides an example of how the content of this book can be structured into a 13-week university course.",
+  "title": "مثال کے طور پر 13 ہفتہ کا نصاب",
+  "description": "یہ نصاب ایک مثال فراہم کرتا ہے کہ کس طرح اس کتاب کے مواد کو 13 ہفتے کے یونیورسٹی کورس میں ڈھالا جا سکتا ہے۔",
   "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/syllabus.md",
   "sourceDirName": ".",
   "slug": "/syllabus",
@@ -11,11 +11,11 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/syllabus.md",
   "tags": [],
   "version": "current",
-  "lastUpdatedBy": null,
-  "lastUpdatedAt": null,
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1766232432000,
   "frontMatter": {
     "id": "syllabus",
-    "title": "Example 13-Week Syllabus",
-    "sidebar_label": "Example Syllabus"
+    "title": "مثال کے طور پر 13 ہفتہ کا نصاب",
+    "sidebar_label": "مثال کے طور پر 13 ہفتہ کا نصاب"
   }
 }

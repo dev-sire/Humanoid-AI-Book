@@ -1,23 +1,23 @@
 ---
 id: syllabus
-title: Example 13-Week Syllabus
-sidebar_label: Example Syllabus
+title: "مثال کے طور پر 13 ہفتہ کا نصاب"
+sidebar_label: "مثال کے طور پر 13 ہفتہ کا نصاب"
 ---
 
-# Example 13-Week Syllabus
+# مثال 13 ہفتہ کا نصاب
 
-This syllabus provides an example of how the content of this book can be structured into a 13-week university course.
+یہ نصاب ایک مثال فراہم کرتا ہے کہ کس طرح اس کتاب کے مواد کو 13 ہفتے کے یونیورسٹی کورس میں ڈھالا جا سکتا ہے۔
 
-- **Week 1**: Introduction to Physical AI (Chapter 1)
-- **Week 2**: ROS 2 Fundamentals: Nodes and Topics (Chapter 2)
-- **Week 3**: ROS 2 Fundamentals: Services and Actions (Chapter 2)
-- **Week 4**: Digital Twins and Simulation with Gazebo (Chapter 3)
-- **Week 5**: Advanced Gazebo and URDF/SDF (Chapter 3)
-- **Week 6**: Introduction to NVIDIA Isaac Sim (Chapter 4)
-- **Week 7**: ROS 2 Integration with Isaac Sim (Chapter 4)
-- **Week 8**: Vision-Language-Action (VLA) Models (Chapter 5)
-- **Week 9**: Advanced VLA Concepts (Chapter 5)
-- **Week 10**: Humanoid Control Architectures (Chapter 6)
-- **Week 11**: Deployment to Physical Hardware (Chapter 6)
-- **Week 12**: Project Work
-- **Week 13**: Final Project Presentations
+- **ہفتہ 1**: فزیکل AI کا تعارف (باب 1)
+- **ہفتہ 2**: ROS 2 کے بنیادی اصول: نوڈس اور عنوانات (باب 2)
+- **ہفتہ 3**: ROS 2 کے بنیادی اصول: خدمات اور اعمال (باب 2)
+- **ہفتہ 4**: ڈیجیٹل جڑواں بچے اور گیزبو کے ساتھ نقلی (باب 3)
+- **ہفتہ 5**: ایڈوانسڈ گیزبو اور URDF/SDF (باب 3)
+- **ہفتہ 6**: NVIDIA Isaac Sim کا تعارف (باب 4)
+- **ہفتہ 7**: ROS 2 Isaac Sim کے ساتھ انٹیگریشن (باب 4)
+- **ہفتہ 8**: ویژن-لینگویج-ایکشن (VLA) ماڈلز (باب 5)
+- **ہفتہ 9**: اعلی درجے کے VLA تصورات (باب 5)
+- **ہفتہ 10**: ہیومینائڈ کنٹرول آرکیٹیکچرز (باب 6)
+- **ہفتہ 11**: فزیکل ہارڈ ویئر میں تعیناتی (باب 6)
+- **ہفتہ 12**: پروجیکٹ کا کام
+- **ہفتہ 13**: حتمی پروجیکٹ پریزنٹیشنز

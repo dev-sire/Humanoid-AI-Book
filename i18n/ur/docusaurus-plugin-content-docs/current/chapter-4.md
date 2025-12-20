@@ -1,7 +1,7 @@
 ---
 id: chapter-4
-title: "Chapter 4: NVIDIA Isaac Integration"
-sidebar_label: "Chapter 4: NVIDIA Isaac Integration"
+title: "باب 4: NVIDIA اسحاق انٹیگریشن"
+sidebar_label: "باب 4: NVIDIA اسحاق انٹیگریشن"
 week: 6-7
 ---
 

@@ -1,7 +1,7 @@
 {
   "id": "module-summaries",
-  "title": "Module Summaries",
-  "description": "Module 1: Foundations (Chapters 1-2)",
+  "title": "ماڈیول کا خلاصہ",
+  "description": "ماڈیول 1: بنیادیں (باب 1-2)",
   "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/module-summaries.md",
   "sourceDirName": ".",
   "slug": "/module-summaries",
@@ -11,16 +11,16 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/module-summaries.md",
   "tags": [],
   "version": "current",
-  "lastUpdatedBy": null,
-  "lastUpdatedAt": null,
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1766232432000,
   "frontMatter": {
     "id": "module-summaries",
-    "title": "Module Summaries",
-    "sidebar_label": "Module Summaries"
+    "title": "ماڈیول کا خلاصہ",
+    "sidebar_label": "ماڈیول کا خلاصہ"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Glossary",
+    "title": "لغت",
     "permalink": "/ur/docs/glossary"
   }
 }

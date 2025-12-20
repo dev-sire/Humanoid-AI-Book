@@ -1,7 +1,7 @@
 ---
 id: chapter-5
-title: "Chapter 5: Vision-Language-Action (VLA) Models"
-sidebar_label: "Chapter 5: VLA Models"
+title: "باب 5: ویژن-لینگویج-ایکشن (VLA) ماڈلز"
+sidebar_label: "باب 5: ویژن-لینگویج-ایکشن (VLA) ماڈلز"
 week: 8-9
 ---
 

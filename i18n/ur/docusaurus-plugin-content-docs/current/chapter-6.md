@@ -1,7 +1,7 @@
 ---
 id: chapter-6
-title: "Chapter 6: Humanoid Control & Deployment"
-sidebar_label: "Chapter 6: Humanoid Control & Deployment"
+title: "باب 6: ہیومینائڈ کنٹرول اور تعیناتی۔"
+sidebar_label: "باب 6: ہیومینائڈ کنٹرول اور تعیناتی۔"
 week: 10-11
 ---
 

@@ -1,6 +1,6 @@
 {
   "id": "chapter-5",
-  "title": "Chapter 5: Vision-Language-Action (VLA) Models",
+  "title": "باب 5: ویژن-لینگویج-ایکشن (VLA) ماڈلز",
   "description": "جائزہ",
   "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/chapter-5.md",
   "sourceDirName": ".",
@@ -11,21 +11,21 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/chapter-5.md",
   "tags": [],
   "version": "current",
-  "lastUpdatedBy": null,
-  "lastUpdatedAt": null,
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1766232432000,
   "frontMatter": {
     "id": "chapter-5",
-    "title": "Chapter 5: Vision-Language-Action (VLA) Models",
-    "sidebar_label": "Chapter 5: VLA Models",
+    "title": "باب 5: ویژن-لینگویج-ایکشن (VLA) ماڈلز",
+    "sidebar_label": "باب 5: ویژن-لینگویج-ایکشن (VLA) ماڈلز",
     "week": "8-9"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Chapter 4: NVIDIA Isaac Integration",
+    "title": "باب 4: NVIDIA اسحاق انٹیگریشن",
     "permalink": "/ur/docs/chapter-4"
   },
   "next": {
-    "title": "Chapter 6: Humanoid Control & Deployment",
+    "title": "باب 6: ہیومینائڈ کنٹرول اور تعیناتی۔",
     "permalink": "/ur/docs/chapter-6"
   }
 }

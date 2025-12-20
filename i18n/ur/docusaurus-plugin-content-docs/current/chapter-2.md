@@ -1,7 +1,7 @@
 ---
 id: chapter-2
-title: "Chapter 2: ROS 2 Fundamentals"
-sidebar_label: "Chapter 2: ROS 2 Fundamentals"
+title: "باب 2: روبوٹ آپریٹنگ سسٹمز 2 بنیادی باتیں"
+sidebar_label: "باب 2: روبوٹ آپریٹنگ سسٹمز 2 بنیادی باتیں"
 week: 2-3
 ---
 
@@ -26,47 +26,47 @@ ROS 2 روبوٹک ایپلی کیشنز بنانے کے لیے ایک اوپن 
 - **خدمات**: خدمات ایک درخواست/جواب کی قسم کی مواصلت ہیں۔ ایک نوڈ ایک سروس پیش کرتا ہے، اور دوسرا نوڈ اس سروس کو کال کرسکتا ہے۔
 - **اعمال**: ایکشن طویل عرصے سے چلنے والے کاموں کے لیے ہیں۔ وہ عملدرآمد کے دوران تاثرات فراہم کرتے ہیں اور اس سے قبل ازوقت کیا جا سکتا ہے۔
 
-## مثالیں۔
+## مثالیں
 
 ### ایک سادہ پبلشر نوڈ (Python)
 
-`` ازگر
-rclpy درآمد کریں۔
-rclpy.node امپورٹ نوڈ سے
-std_msgs.msg امپورٹ سٹرنگ سے
+```python
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
 
-کلاس سادہ پبلشر (نوڈ): 
-def __init__(self): 
-super().__init__('simple_publisher') 
-self.publisher_ = self.create_publisher(String, 'chatter', 10) 
-self.timer = self.create_timer(0.5، self.timer_callback) 
-self.i = 0 
+class SimplePublisher(Node):
+    def __init__(self):
+        super().__init__('simple_publisher')
+        self.publisher_ = self.create_publisher(String, 'chatter', 10)
+        self.timer = self.create_timer(0.5, self.timer_callback)
+        self.i = 0
+    
+    def timer_callback(self):
+        msg = String()
+        msg.data = f'Hello World: {self.i}'
+        self.publisher_.publish(msg)
+        self.get_logger().info(f'Publishing: "{msg.data}"')
+        self.i += 1
 
-ڈیف ٹائمر_کال بیک (خود): 
-msg = سٹرنگ () 
-msg.data = f'Hello World: {self.i}' 
-self.publisher_.publish(msg) 
-self.get_logger().info(f'Publishing: "{msg.data}"') 
-self.i += 1
+def main(args=None):
+    rclpy.init(args=args)
+    simple_publisher = SimplePublisher()
+    rclpy.spin(simple_publisher)
+    simple_publisher.destroy_node()
+    rclpy.shutdown()
 
-def main(args=None): 
-rclpy.init(args=args) 
-simple_publisher = سادہ پبلشر() 
-rclpy.spin(simple_publisher) 
-simple_publisher.destroy_node() 
-rclpy.shutdown()
-
-اگر __name__ == '__main__': 
-مین ()
-``
+if __name__ == '__main__':
+    main()
+```
 
 ### پبلشر کو چلانا
 
 اس نوڈ کو چلانے کے لیے، آپ اسے Python فائل کے طور پر محفوظ کریں گے، اور پھر اسے `python your_node.py` کے ساتھ چلائیں گے۔ پھر آپ ROS 2 CLI کا استعمال کرتے ہوئے `چیٹر` موضوع کو سن سکتے ہیں:
 
-''بش
-ros2 موضوع echo /chatter
-``
+```bash
+ros2 topic echo /chatter
+```
 
 ## اعداد و شمار
 

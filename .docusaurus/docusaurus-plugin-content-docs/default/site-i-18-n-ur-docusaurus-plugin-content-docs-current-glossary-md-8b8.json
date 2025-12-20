@@ -1,6 +1,6 @@
 {
   "id": "glossary",
-  "title": "Glossary",
+  "title": "لغت",
   "description": "A comprehensive list of technical terms and AI-specific terminology used throughout the \"Physical AI & Humanoid Robotics\" book.",
   "source": "@site/i18n/ur/docusaurus-plugin-content-docs/current/glossary.md",
   "sourceDirName": ".",
@@ -11,20 +11,20 @@
   "editUrl": "https://github.com/dev-sire/Humanoid-AI-Book/docs/glossary.md",
   "tags": [],
   "version": "current",
-  "lastUpdatedBy": null,
-  "lastUpdatedAt": null,
+  "lastUpdatedBy": "dev-sire",
+  "lastUpdatedAt": 1766232432000,
   "frontMatter": {
     "id": "glossary",
-    "title": "Glossary",
-    "sidebar_label": "Glossary"
+    "title": "لغت",
+    "sidebar_label": "لغت"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Chapter 6: Humanoid Control & Deployment",
+    "title": "باب 6: ہیومینائڈ کنٹرول اور تعیناتی۔",
     "permalink": "/ur/docs/chapter-6"
   },
   "next": {
-    "title": "Module Summaries",
+    "title": "ماڈیول کا خلاصہ",
     "permalink": "/ur/docs/module-summaries"
   }
 }
